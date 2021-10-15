@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import CSstart from './CSstart';
 import App from './App';
-import ClassStudy from './ClassStudy';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -14,7 +15,7 @@ ReactDOM.render(
     <Router>
     <>
       <Route exact path="/" component={App}/>
-      <Route exact path="/cs" component={ClassStudy}/>
+      <Route exact path="/cs" component={CSstart}/>
     </>
     </Router>
  </React.StrictMode>,
