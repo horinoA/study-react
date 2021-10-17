@@ -23,10 +23,11 @@ class ClassStudy extends React.Component<Myprops,Mystate>{
         count:0,
         toggle:true,
         text:""
-    }
+    };
     //イベント設定時引数の型は教えてくれる
     onCountClick =  (e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
-        this.setState({ count : this.state.count + 1});
+        this.setState(
+            { count : this.state.count + 1});
     };
 
     onToggleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
@@ -58,4 +59,4 @@ class ClassStudy extends React.Component<Myprops,Mystate>{
     };
 }
 
-export default ClassStudy
+export default ClassStudy;
