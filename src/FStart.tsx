@@ -1,5 +1,6 @@
 import FcStudy from "./FcStudy";
 
+
 export default function FStart(){
     /*propはテキスト以外はオブジェクト{}で渡す */
     return(
