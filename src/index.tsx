@@ -4,6 +4,7 @@ import './index.css';
 import CSstart from './CSstart';
 import App from './App';
 import FStart from './FStart';
+import UEstart from './UEstart';
 import {
   BrowserRouter as Router,
   Route,
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route exact path="/" component={App}/>
       <Route exact path="/cs" component={CSstart}/>
       <Route exact path="/fc" component={FStart}/>
+      <Route exact path="/ue" component={UEstart}/>
     </>
     </Router>
  </React.StrictMode>,

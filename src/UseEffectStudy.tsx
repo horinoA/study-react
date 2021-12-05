@@ -1,28 +1,22 @@
 import React, { useState } from "react";
-import {UEStudy} from "./models/UEStudy.interface"
+import {PostType} from "./models/post.interface"
 
+const UseEffectStudy:React.FunctionComponent<PostType> = (props) => {
 
-
-const UseEffectStudy:React.FunctionComponent<UEStudy> = (props) => {
-
-    const [state,setState] = useState<UEStudy>({
+    const [state,setState] = useState<PostType>({
+        userId:props.userId,
         id:props.id,
-        name:props.name,
-        director:props.director,
-        rating:props.rating
+        title:props.title,
+        body:props.body
     });
 
     return(
         <div>
-        <h1>MovieList</h1>
-        <input type="text" value={state.id} />
-        <br />
-        <button >
-            getMovie!
-        </button>
-        <p>Title:{state.name}</p>
-        <p>Directer:{state.director}</p>
-        <p>Rating:{state.rating}</p>
+            <p>userId:{state.userId}</p>
+            <p>Title:{state.title}</p>
+            <p>id:{state.id}</p>
+            <p>body:{state.body}</p>
+            <br />
         </div>
     );
 }

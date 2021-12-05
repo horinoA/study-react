@@ -21,6 +21,7 @@ const FcStudy:React.FunctionComponent<Myprops> = (props) => {
         text:"（●｀ε´●）"
     });
     
+
     /* イベントとった(e)から要素を取り出すのは残余(Rest)構文から
     key: 取り出したい値でいい*/
     const onTextChange = (e: React.FormEvent<HTMLInputElement>) => {
@@ -50,7 +51,6 @@ const FcStudy:React.FunctionComponent<Myprops> = (props) => {
             toggle:{String(state.toggle)}
         </button>
         <p>{state.text}</p>
-
     </div>);
 }
 
